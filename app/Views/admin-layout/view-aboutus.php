@@ -23,7 +23,7 @@
                     <th>Created At</th>
                     <th>Updated At</th>
                     <th>Edit</th>
-                    <th>Delete</th>
+                   
                   </tr>
                   </thead>
                   <tbody>
@@ -40,8 +40,8 @@
                   <td><?php echo $about['is_active'];?></td>
                   <td><?php echo $about['created_at'];?></td>
                   <td><?php echo $about['updated_at'];?></td>
-                  <td><a href="">Edit</a></td>
-                  <td><a href="">Delete</a></td>
+                  <td><a href="<?php echo base_url(); ?>/admin/edit/aboutus/<?php echo $about['id']?>">Edit</a></td>
+                 
                   </tr>
                   <?php }?>
                   

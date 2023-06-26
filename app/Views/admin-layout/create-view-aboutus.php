@@ -40,7 +40,7 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form>
+        <form method="post" action="<?php echo site_url('admin/create/insert');?>">
             <div class="card-body">
                 <div class="form-group">
                     <label for="title">Title</label>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter Description"></textarea>
+                        <textarea class="form-control" rows="3" name="description"  placeholder="Enter Description"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -82,7 +82,7 @@
             <!-- /.card-body -->
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>

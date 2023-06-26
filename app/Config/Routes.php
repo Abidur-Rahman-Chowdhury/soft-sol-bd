@@ -34,8 +34,10 @@ $routes->get('/home/test', 'Home::test');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/login', 'Admin::login');
 $routes->get('/admin/about-us', 'Admin::aboutus');
-$routes->get('/admin/about-us', 'Admin::aboutusview');
+
 $routes->get('/admin/create-about', 'Admin::createaboutus');
+/* route for post about us page data into database */
+$routes->post('admin/create/insert', 'Admin::insert_about_us');
 
 /*
  * --------------------------------------------------------------------
