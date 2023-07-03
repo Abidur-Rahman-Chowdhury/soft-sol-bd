@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | Dashboard</title>
-  <base href="<?= base_url();?>/"/>
+  <base href="<?= base_url();?>"/>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -26,6 +26,12 @@
   <link rel="stylesheet" href="admin-template/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="admin-template/plugins/summernote/summernote-bs4.min.css">
+  
+  <!-- CodeMirror -->
+  <link rel="stylesheet" href="admin-template/plugins/codemirror/codemirror.css">
+  <link rel="stylesheet" href="admin-template/plugins/codemirror/theme/monokai.css">
+  <!-- SimpleMDE -->
+  <link rel="stylesheet" href="admin-template/plugins/simplemde/simplemde.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">

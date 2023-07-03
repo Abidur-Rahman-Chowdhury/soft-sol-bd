@@ -1,0 +1,19 @@
+CRITICAL - 2023-06-27 08:45:02 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 42.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(42): date('Y-m-d H:i:s', '2023-06-26 16:22:00')
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(77): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editaboutus('14')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 13:38:39 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\Admin.php on line 46.
+ 1 APPPATH\Controllers\Admin.php(46): date('Y-m-d', '2023-6-27')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

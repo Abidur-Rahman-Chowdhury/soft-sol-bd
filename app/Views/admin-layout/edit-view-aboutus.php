@@ -2,24 +2,23 @@
 
   <div class="card card-primary">
     <div class="card-header">
-      <h3 class="card-title">Create About Us</h3>
+      <h3 class="card-title">Edit About Us</h3>
     </div>
     <!-- /.card-header -->
     <!-- form start -->
-    <form method="post" enctype='multipart/form-data' action="<?php echo site_url('admin/create/insert'); ?>">
+    <form method="post" enctype="multipart/form-data" action="<?php echo site_url('admin/aboutus/update'); ?>">
+      <input type="hidden" name="id" value="<?php echo $about['id']; ?>">
       <div class="card-body">
-        
-
         <div class="form-group">
           <label for="title">Title</label>
-          <input type="text" class="form-control" id="title" name="title" placeholder="title">
+          <input type="text" value="<?php echo $about['title']; ?>" class="form-control" id="title" name="title" placeholder="title">
           <?php if (isset($errors['title'])) : ?>
             <span class="text-danger"><?= $errors['title'] ?></span>
           <?php endif ?>
         </div>
         <div class="form-group">
           <label for="MetaKeyWord">Meta Key Word</label>
-          <input type="text" class="form-control" id="MetaKeyWord" name="meta_key_word" placeholder="meta key word">
+          <input type="text" value="<?php echo $about['meta_key_word']; ?>" class="form-control" id="MetaKeyWord" name="meta_key_word" placeholder="meta key word">
           <?php if (isset($errors['meta_key_word'])) : ?>
             <span class="text-danger"><?= $errors['meta_key_word'] ?></span>
           <?php endif ?>
@@ -30,22 +29,22 @@
             <b> Description</b>
           </h3>
         </div>
-        <div class="card-body " style="margin-left:-20px;">
+        <div class="card-body" style="margin-left:-20px;">
           <textarea id="summernote" name="description">
-                Place <em>some</em> <u>text</u> <strong>here</strong>
-              </textarea>
+              <?php echo $about['description']; ?>
+          </textarea>
           <?php if (isset($errors['description'])) : ?>
             <span class="text-danger"><?= $errors['description'] ?></span>
           <?php endif ?>
         </div>
-
         <div class="form-group">
           <label for="IsActive">Is Active</label>
-          <input type="number" class="form-control" id="IsActive" name="is_active" placeholder="Is Active">
+          <input type="number" value="<?php echo $about['is_active']; ?>" class="form-control" id="IsActive" name="is_active" placeholder="Is Active">
           <?php if (isset($errors['is_active'])) : ?>
             <span class="text-danger"><?= $errors['is_active'] ?></span>
           <?php endif ?>
         </div>
+
 
         <div class="form-group">
           <label for="formFileLg" class="form-label">Select image:</label>
@@ -63,15 +62,8 @@
 </div>
 
 
-
-
-
-
-
 <!-- jQuery -->
 <script src="admin-template/plugins/jquery/jquery.min.js"></script>
-
-
 <!-- Page specific script -->
 <script>
   $(function() {

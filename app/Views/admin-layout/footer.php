@@ -43,6 +43,15 @@
 <script src="admin-template/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
 <script src="admin-template/plugins/summernote/summernote-bs4.min.js"></script>
+
+<!-- editor summer note -->
+
+<!-- CodeMirror -->
+<script src="admin-template/plugins/codemirror/codemirror.js"></script>
+<script src="admin-template/plugins/codemirror/mode/css/css.js"></script>
+<script src="admin-template/plugins/codemirror/mode/xml/xml.js"></script>
+<script src="admin-template/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
 <!-- overlayScrollbars -->
 <script src="admin-template/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
@@ -51,5 +60,30 @@
 <script src="admin-template/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="admin-template/js/pages/dashboard.js"></script>
+
+
+
+
+
+<!-- Select2 -->
+<script src="admin-template/plugins/select2/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="admin-template/plugins/inputmask/jquery.inputmask.min.js"></script>
+
+
+<script>
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
+
+    // CodeMirror
+    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      mode: "htmlmixed",
+      theme: "monokai"
+    });
+  })
+</script>
+
+
 </body>
 </html>

@@ -1,0 +1,12 @@
+CRITICAL - 2023-06-28 04:49:58 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\admin-layout\view-aboutus.php on line 41.
+ 1 APPPATH\Views\admin-layout\view-aboutus.php(41): date('Y-m-d', '2023-06-27 00:00:00')
+ 2 APPPATH\Views\admin\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(28): view('admin/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

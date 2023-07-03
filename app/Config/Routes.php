@@ -39,6 +39,14 @@ $routes->get('/admin/create-about', 'Admin::createaboutus');
 /* route for post about us page data into database */
 $routes->post('admin/create/insert', 'Admin::insert_about_us');
 
+/* Show editable create page data */
+
+$routes->get('admin/edit/aboutus/(:num)', 'Admin::editaboutus/$1');
+
+/* Update aboutus  data  */
+
+$routes->post('admin/aboutus/update', 'Admin::update_aboutus');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

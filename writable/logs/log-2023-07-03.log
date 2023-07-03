@@ -1,0 +1,242 @@
+CRITICAL - 2023-07-03 06:21:34 --> Undefined array key "image"
+in APPPATH\Models\AboutusModel.php on line 17.
+ 1 APPPATH\Models\AboutusModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\wamp64\\www\\software-company\\app\\Models\\AboutusModel.php', 17)
+ 2 APPPATH\Controllers\Admin.php(68): App\Models\AboutusModel->imageUpload([], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 06:22:05 --> Undefined array key "image"
+in APPPATH\Models\AboutusModel.php on line 17.
+ 1 APPPATH\Models\AboutusModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\wamp64\\www\\software-company\\app\\Models\\AboutusModel.php', 17)
+ 2 APPPATH\Controllers\Admin.php(68): App\Models\AboutusModel->imageUpload([], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 06:29:59 --> Undefined array key "image"
+in APPPATH\Models\AboutusModel.php on line 17.
+ 1 APPPATH\Models\AboutusModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\wamp64\\www\\software-company\\app\\Models\\AboutusModel.php', 17)
+ 2 APPPATH\Controllers\Admin.php(68): App\Models\AboutusModel->imageUpload([], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:42:28 --> Invalid file: "create_about_us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_about_us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create_about_us', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create_about_us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:44:00 --> Invalid file: "create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:44:13 --> Invalid file: "create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:46:47 --> Undefined variable $errors
+in APPPATH\Views\admin-layout\create-view-aboutus.php on line 1.
+ 1 APPPATH\Views\admin-layout\create-view-aboutus.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php', 1)
+ 2 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(38): view('admin/create-about-us')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->createaboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:46:59 --> Undefined variable $errors
+in APPPATH\Views\admin-layout\create-view-aboutus.php on line 1.
+ 1 APPPATH\Views\admin-layout\create-view-aboutus.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php', 1)
+ 2 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(38): view('admin/create-about-us')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->createaboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:47:00 --> Undefined variable $errors
+in APPPATH\Views\admin-layout\create-view-aboutus.php on line 1.
+ 1 APPPATH\Views\admin-layout\create-view-aboutus.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php', 1)
+ 2 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(38): view('admin/create-about-us')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->createaboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:48:21 --> Invalid file: "create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:49:23 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 08:49:31 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(59): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:40:22 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(60): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:42:15 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(60): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:44:05 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(60): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:44:45 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(60): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 09:54:25 --> Path cannot be empty
+in APPPATH\Models\AboutusModel.php on line 19.
+ 1 APPPATH\Models\AboutusModel.php(19): getimagesize('')
+ 2 APPPATH\Controllers\Admin.php(83): App\Models\AboutusModel->imageUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:03:00 --> Path cannot be empty
+in APPPATH\Models\AboutusModel.php on line 19.
+ 1 APPPATH\Models\AboutusModel.php(19): getimagesize('')
+ 2 APPPATH\Controllers\Admin.php(84): App\Models\AboutusModel->imageUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:03:51 --> Path cannot be empty
+in APPPATH\Models\AboutusModel.php on line 19.
+ 1 APPPATH\Models\AboutusModel.php(19): getimagesize('')
+ 2 APPPATH\Controllers\Admin.php(84): App\Models\AboutusModel->imageUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:03:59 --> Path cannot be empty
+in APPPATH\Models\AboutusModel.php on line 19.
+ 1 APPPATH\Models\AboutusModel.php(19): getimagesize('')
+ 2 APPPATH\Controllers\Admin.php(84): App\Models\AboutusModel->imageUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:10:53 --> Invalid file: "create-about-us.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-about-us.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-about-us', [], true)
+ 3 APPPATH\Controllers\Admin.php(58): view('create-about-us', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:11:48 --> Invalid file: "create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(58): view('create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:12:04 --> Invalid file: "create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(58): view('create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:17:17 --> Invalid file: "admin/create-view-aboutus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/create-view-aboutus.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-view-aboutus', [], true)
+ 3 APPPATH\Controllers\Admin.php(58): view('admin/create-view-aboutus', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_about_us()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:37:28 --> Undefined variable $about
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $about', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(101): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 10:49:08 --> Undefined variable $about
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $about', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(102): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
