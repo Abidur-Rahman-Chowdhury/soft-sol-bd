@@ -31,7 +31,7 @@
 
                  <?php 
                 //  dd($aboutus);
-                 foreach ($aboutus as $about) { ?>
+                  foreach ($aboutus as $about) { ?>
                   <tr>
                     <!-- Data will be printed here  -->
                    

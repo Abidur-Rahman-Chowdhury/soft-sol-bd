@@ -3,12 +3,13 @@
 namespace App\Controllers;
 
 use App\Models\AboutusModel;
+use App\Models\PortfolioModel;
 use CodeIgniter\Validation\Validation;
 class Admin extends BaseController
 {
     public function index()
     {
-        // dd("this is admin");
+        
         return view('admin/index');
     }
     public function login()
@@ -126,28 +127,7 @@ class Admin extends BaseController
         }
 
 
-        /* end */
-
-
-        // $model = new AboutusModel();
-        // $upload_image = $model->imageUpload($_FILES, '', 400, 200);
-		// $createAt = $this->request->getVar('created_at');
-        // $updateAt = $this->request->getVar('updated_at');
-       
-		// $data = [
-		// 	/* getVar(varibale) which is the assign value in the form name attribute */
-		// 	'title'=>$this->request->getVar('title'),
-		// 	'meta_key_word'=>$this->request->getVar('meta_key_word'),
-		// 	'description'=>$this->request->getVar('description'),
-		// 	'is_active'=>$this->request->getVar('is_active'),
-		// 	'created_at'=>$createAt,
-		// 	'updated_at'=>$updateAt,
-        //     'file_name' => $upload_image,
-		// ];
-		// $id = $this->request->getVar('id');
-		// $model->update($id,$data);
-
-		// return redirect()->to(base_url('admin/about-us'));
+      
 
 	}
 
@@ -160,5 +140,79 @@ class Admin extends BaseController
         $data['about'] = $model->where('id', $id)->first();
 
         return view('admin/edit-about-us', $data);
+    }
+    /* portfolio controller  */
+
+       /* this method is to show portfolio page data.
+    and $routes->get('/admin/portfolio', 'Admin::portfolio');
+    above is the route
+    */
+
+    public function portfolio()
+    {
+        $model = new PortfolioModel();
+        $data['portfolio'] = $model->findAll();
+        return view('admin/portfolio/portfolio', $data);
+    }
+
+
+       /* this method is to show create aboutus page data.
+    and $routes->get('/admin/create-portfolio', 'Admin::createportfolio');
+    above is the route
+    */
+    public function createportfolio()
+    {
+        return view('admin/portfolio/create-portfolio');
+    }
+
+    /* this method is to insert portfolio  data.
+    and $routes->get('admin/portfolio/insert', 'Admin::insert_portfolio');
+    above is the route
+    */
+    public function insert_portfolio()
+    {
+       
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'title' => 'required',
+            'meta_key_word' => 'required',
+            'description' => 'required',
+            
+        ]);
+        if (!$validation->withRequest($this->request)->run()) {
+            // Validation failed, display errors
+            $errors = $validation->getErrors();
+            // var_dump($errors);
+            // Handle the errors as needed, such as displaying them in the view
+            // For example:
+            return view('admin/portfolio/create-portfolio', ['errors' => $errors]);
+        } 
+        else {
+            // Validation passed, continue with data insertion
+            $pmodel = new PortfolioModel();
+            // var_dump($_FILES);
+           
+            if(isset($_FILES['image']) && !empty($_FILES['image']['tmp_name'])){
+                dd($_FILES['image']);
+                    $portfolio_image = $pmodel->portfolioImageUpload($_FILES, '', 400, 200);
+                    
+                } else {
+                    $portfolio_image = '';
+                }
+                // var_dump($portfolio_image);
+                //     dd();
+            $data = [
+                'title' => $this->request->getVar('title'),
+                'meta_key_word' => $this->request->getVar('meta_key_word'),
+                'description' => $this->request->getVar('description'),
+                'file_name' => $portfolio_image,
+            ];
+
+           
+            $pmodel->insert($data);
+            return redirect()->to(base_url('admin/portfolio'));
+        }
+
+        
     }
 }
