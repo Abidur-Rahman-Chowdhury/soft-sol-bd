@@ -38,7 +38,7 @@
                   <td><?php echo $data['meta_key_word'];?></td>
                   <td><?php echo $data['description'];?></td>
                   <td><?php echo $data['file_name'];?></td>
-                  <td><a href="<?php echo base_url(); ?>admin/portfolio/edit/aboutus/<?php echo $data['id']?>">Edit</a></td>
+                  <td><a href="<?php echo base_url(); ?>admin/edit/portfolio/<?php echo $data['id']?>">Edit</a></td>
                  
                   </tr>
                   <?php }?>
@@ -67,5 +67,5 @@
    <!-- <a href="/admin/create-about"> <button class="btn btn-success ml-2 font-bold">Create</button> </a>   -->
 
    <?php else: ?>
-         <a href="/admin/portfolio/create-portfolio"> <button class="btn btn-success ml-2 font-bold">Create Portfolio</button> </a>  
+         <a href="/admin/create-portfolio"> <button class="btn btn-success ml-2 font-bold">Create Portfolio</button> </a>  
     <?php endif; ?>

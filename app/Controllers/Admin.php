@@ -5,11 +5,12 @@ namespace App\Controllers;
 use App\Models\AboutusModel;
 use App\Models\PortfolioModel;
 use CodeIgniter\Validation\Validation;
+
 class Admin extends BaseController
 {
     public function index()
     {
-        
+
         return view('admin/index');
     }
     public function login()
@@ -41,7 +42,7 @@ class Admin extends BaseController
 
     public function insert_about_us()
     {
-       
+
         $validation = \Config\Services::validation();
         $validation->setRules([
             'title' => 'required',
@@ -56,15 +57,14 @@ class Admin extends BaseController
             // Handle the errors as needed, such as displaying them in the view
             // For example:
             return view('admin/create-about-us', ['errors' => $errors]);
-        } 
-        else {
+        } else {
             // Validation passed, continue with data insertion
             $model = new AboutusModel();
-            if($this->request->getVar('image')){
-                    $upload_image = $model->imageUpload($_FILES, '', 400, 200);
-                } else {
-                    $upload_image = '';
-                }
+            if ($this->request->getVar('image')) {
+                $upload_image = $model->imageUpload($_FILES, '', 400, 200);
+            } else {
+                $upload_image = '';
+            }
             $data = [
                 'title' => $this->request->getVar('title'),
                 'meta_key_word' => $this->request->getVar('meta_key_word'),
@@ -76,13 +76,12 @@ class Admin extends BaseController
             $model->insert($data);
             return redirect()->to(base_url('admin/about-us'));
         }
-
-        
     }
 
-     /* update about us data */
+    /* update about us data */
 
-     public function update_aboutus() {
+    public function update_aboutus()
+    {
 
         /* update validation start */
         $id = $this->request->getVar('id');
@@ -101,16 +100,15 @@ class Admin extends BaseController
             // Handle the errors as needed, such as displaying them in the view
             // For example:
             return view('admin/edit-about-us', ['errors' => $errors]);
-        } 
-        else {
+        } else {
             // Validation passed, continue with data insertion
             $model = new AboutusModel();
-            if($this->request->getVar('image')){
-                    $upload_image = $model->imageUpload($_FILES, '', 400, 200);
-                } else {
-                    $upload_image = '';
-                }
-           
+            if ($this->request->getVar('image')) {
+                $upload_image = $model->imageUpload($_FILES, '', 400, 200);
+            } else {
+                $upload_image = '';
+            }
+
             $data = [
                 'title' => $this->request->getVar('title'),
                 'meta_key_word' => $this->request->getVar('meta_key_word'),
@@ -119,17 +117,12 @@ class Admin extends BaseController
                 'file_name' => $upload_image
             ];
 
-            
-            $model->update($id,$data);
-    
+
+            $model->update($id, $data);
+
             return redirect()->to(base_url('admin/about-us'));
-            
         }
-
-
-      
-
-	}
+    }
 
 
     /* show data editable data for aboutus  */
@@ -143,7 +136,7 @@ class Admin extends BaseController
     }
     /* portfolio controller  */
 
-       /* this method is to show portfolio page data.
+    /* this method is to show portfolio page data.
     and $routes->get('/admin/portfolio', 'Admin::portfolio');
     above is the route
     */
@@ -156,7 +149,7 @@ class Admin extends BaseController
     }
 
 
-       /* this method is to show create aboutus page data.
+    /* this method is to show create aboutus page data.
     and $routes->get('/admin/create-portfolio', 'Admin::createportfolio');
     above is the route
     */
@@ -171,13 +164,13 @@ class Admin extends BaseController
     */
     public function insert_portfolio()
     {
-       
+
         $validation = \Config\Services::validation();
         $validation->setRules([
             'title' => 'required',
             'meta_key_word' => 'required',
             'description' => 'required',
-            
+
         ]);
         if (!$validation->withRequest($this->request)->run()) {
             // Validation failed, display errors
@@ -186,33 +179,107 @@ class Admin extends BaseController
             // Handle the errors as needed, such as displaying them in the view
             // For example:
             return view('admin/portfolio/create-portfolio', ['errors' => $errors]);
-        } 
-        else {
-            // Validation passed, continue with data insertion
+        } else {
+        
             $pmodel = new PortfolioModel();
-            // var_dump($_FILES);
-           
-            if(isset($_FILES['image']) && !empty($_FILES['image']['tmp_name'])){
-                dd($_FILES['image']);
-                    $portfolio_image = $pmodel->portfolioImageUpload($_FILES, '', 400, 200);
-                    
-                } else {
-                    $portfolio_image = '';
+
+            $uploadedImages = [];
+
+            if (isset($_FILES['image']) && !empty($_FILES['image']['tmp_name'])) {
+                $files = $_FILES['image'];
+
+                foreach ($files['tmp_name'] as $index => $tmpName) {
+                    if (!empty($tmpName)) {
+                        $uploadedImage = $pmodel->portfolioImageUpload($files, 'admin-template/upload/', 400, 200, $index);
+                        $uploadedImages[] = $uploadedImage;
+                    }
                 }
-                // var_dump($portfolio_image);
-                //     dd();
+            }
+
             $data = [
                 'title' => $this->request->getVar('title'),
                 'meta_key_word' => $this->request->getVar('meta_key_word'),
                 'description' => $this->request->getVar('description'),
-                'file_name' => $portfolio_image,
+                'file_name' => implode(',', $uploadedImages), // Save the file names as a comma-separated string
+            ];
+
+            $pmodel->insert($data);
+            return redirect()->to(base_url('admin/portfolio'));
+
+
+            
+        }
+    }
+
+
+
+
+    /* this method is for update portfolio data 
+      
+     */
+
+    public function update_portfolio()
+    {
+
+        /* update validation start */
+        $id = $this->request->getVar('id');
+
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'title' => 'required',
+            'meta_key_word' => 'required',
+            'description' => 'required',
+
+        ]);
+        if (!$validation->withRequest($this->request)->run()) {
+            // Validation failed, display errors
+            $errors = $validation->getErrors();
+            // var_dump($errors);
+            // Handle the errors as needed, such as displaying them in the view
+            // For example:
+            return view('admin/edit-portfolio', ['errors' => $errors]);
+        } else {
+            // Validation passed, continue with data insertion
+            $pmodel = new PortfolioModel();
+
+            $uploadedImages = [];
+
+            if (isset($_FILES['image']) && !empty($_FILES['image']['tmp_name'])) {
+                $files = $_FILES['image'];
+
+                foreach ($files['tmp_name'] as $index => $tmpName) {
+                    if (!empty($tmpName)) {
+                        $uploadedImage = $pmodel->portfolioImageUpload($files, 'admin-template/upload/', 400, 200, $index);
+                        $uploadedImages[] = $uploadedImage;
+                    }
+                }
+            }
+
+            $data = [
+                'title' => $this->request->getVar('title'),
+                'meta_key_word' => $this->request->getVar('meta_key_word'),
+                'description' => $this->request->getVar('description'),
+                'file_name' => implode(',', $uploadedImages), // Save the file names as a comma-separated string
             ];
 
            
-            $pmodel->insert($data);
+
+
+            $pmodel->update($id, $data);
+
             return redirect()->to(base_url('admin/portfolio'));
         }
+    }
 
-        
+
+    /* show editable data for portfolio 
+    routes  $routes->get('admin/edit/portfolio/(:num)', 'Admin::editportfolio/$1');
+    */
+    public function editportfolio($id = null)
+    {
+        $model = new PortfolioModel();
+        $data['portfolio'] = $model->where('id', $id)->first();
+
+        return view('admin/portfolio/edit-portfolio', $data);
     }
 }

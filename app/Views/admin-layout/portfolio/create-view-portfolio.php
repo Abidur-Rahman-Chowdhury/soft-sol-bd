@@ -6,7 +6,7 @@
     </div>
     <!-- /.card-header -->
     <!-- form start -->
-    <form method="post"  action="<?php echo site_url('admin/portfolio/insert'); ?>" enctype="multipart/form-data">
+    <form method="post" action="<?php echo site_url('admin/portfolio/insert'); ?>" enctype="multipart/form-data">
       <div class="card-body">
 
         <div class="form-group">
@@ -31,18 +31,32 @@
         </div>
         <div class="card-body " style="margin-left:-20px;">
           <textarea id="summernote" name="description">
-               
+
               </textarea>
           <?php if (isset($errors['description'])) : ?>
             <span class="text-danger"><?= $errors['description'] ?></span>
           <?php endif ?>
         </div>
 
-        <div class="form-group">
+        <!-- previous image code block -->
+
+        <!-- <div class="form-group">
           <label for="formFileLg" class="form-label">Select image:</label>
           <input class="form-control form-control-lg" type="file" name="image">
-        </div>
+        </div> -->
 
+        <!-- select multiple images -->
+        <!-- <div class="form-group">
+          <label for="images" class="form-label">Select images:</label>
+          <input class="form-control form-control-lg" type="file" name="images[]" multiple>
+        </div> -->
+        <div class="form-group">
+          <label for="formFileLg" class="form-label">Select image:</label>
+          <div id="imageFieldsContainer">
+            <input class="form-control form-control-lg" type="file" name="image[]">
+          </div>
+          <button id="addImageBtn" class="btn btn-primary">Add More Images</button>
+        </div>
       </div>
       <!-- /.card-body -->
 
@@ -60,10 +74,47 @@
 
 
 <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="admin-template/plugins/jquery/jquery.min.js"></script>
 
-
 <!-- Page specific script -->
+
+<script>
+  $(document).ready(function() {
+    var imageCounter = 1;
+
+    $('#addImageBtn').click(function(e) {
+      e.preventDefault();
+
+      var newImageField = $('<div>', {
+        class: 'image-field'
+      });
+
+      var newImageInput = $('<input>', {
+        class: 'form-control form-control-lg',
+        type: 'file',
+        name: 'image[]'
+      }).appendTo(newImageField);
+
+      var removeBtn = $('<button>', {
+        class: 'btn btn-danger remove-image-btn',
+        text: 'Remove'
+      }).appendTo(newImageField);
+
+      $('#imageFieldsContainer').append(newImageField);
+
+      imageCounter++;
+    });
+
+    $('#imageFieldsContainer').on('click', '.remove-image-btn', function() {
+      $(this).closest('.image-field').remove();
+    });
+  });
+</script>
+
+
+
+
 <script>
   $(function() {
     //Initialize Select2 Elements

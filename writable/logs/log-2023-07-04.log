@@ -78,3 +78,150 @@ in APPPATH\Models\PortfolioModel.php on line 19.
  4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
  5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 09:02:04 --> Undefined variable $about
+in APPPATH\Views\admin-layout\portfolio\edit-view-portfolio.php on line 10.
+ 1 APPPATH\Views\admin-layout\portfolio\edit-view-portfolio.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $about', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\portfolio\\edit-view-portfolio.php', 10)
+ 2 APPPATH\Views\admin\portfolio\edit-portfolio.php(11): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\portfolio\\edit-view-portfolio.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\portfolio\\edit-portfolio.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/portfolio/edit-portfolio', [], true)
+ 6 APPPATH\Controllers\Admin.php(225): view('admin/portfolio/edit-portfolio', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editportfolio('10')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 09:03:04 --> Undefined array key "is_active"
+in APPPATH\Views\admin-layout\portfolio\edit-view-portfolio.php on line 42.
+ 1 APPPATH\Views\admin-layout\portfolio\edit-view-portfolio.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_active"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\portfolio\\edit-view-portfolio.php', 42)
+ 2 APPPATH\Views\admin\portfolio\edit-portfolio.php(11): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\portfolio\\edit-view-portfolio.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\portfolio\\edit-portfolio.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/portfolio/edit-portfolio', [], true)
+ 6 APPPATH\Controllers\Admin.php(225): view('admin/portfolio/edit-portfolio', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editportfolio('10')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 09:13:55 --> Undefined variable $about
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $about', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(103): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->update_aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 11:53:47 --> Undefined array key "images"
+in APPPATH\Models\PortfolioModel.php on line 65.
+ 1 APPPATH\Models\PortfolioModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Models\\PortfolioModel.php', 65)
+ 2 APPPATH\Controllers\Admin.php(221): App\Models\PortfolioModel->portfolioImagesUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 11:58:32 --> Undefined array key "images"
+in APPPATH\Models\PortfolioModel.php on line 65.
+ 1 APPPATH\Models\PortfolioModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Models\\PortfolioModel.php', 65)
+ 2 APPPATH\Controllers\Admin.php(222): App\Models\PortfolioModel->portfolioImagesUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 13:55:58 --> Undefined array key "images"
+in APPPATH\Models\PortfolioModel.php on line 65.
+ 1 APPPATH\Models\PortfolioModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Models\\PortfolioModel.php', 65)
+ 2 APPPATH\Controllers\Admin.php(222): App\Models\PortfolioModel->portfolioImagesUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:15:10 --> getimagesize(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\PortfolioModel.php on line 19.
+ 1 APPPATH\Models\PortfolioModel.php(19): getimagesize([...])
+ 2 APPPATH\Controllers\Admin.php(197): App\Models\PortfolioModel->portfolioImageUpload([...], '', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:01 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:03 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:05 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:09 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:13 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:15 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:20:21 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Admin.php on line 236.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 14:21:56 --> getimagesize(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\PortfolioModel.php on line 19.
+ 1 APPPATH\Models\PortfolioModel.php(19): getimagesize([...])
+ 2 APPPATH\Controllers\Admin.php(207): App\Models\PortfolioModel->portfolioImageUpload([...], 'admin-template/upload/', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-04 15:58:19 --> getimagesize(): Argument #1 ($filename) must be of type string, array given
+in APPPATH\Models\PortfolioModel.php on line 19.
+ 1 APPPATH\Models\PortfolioModel.php(19): getimagesize([...])
+ 2 APPPATH\Controllers\Admin.php(207): App\Models\PortfolioModel->portfolioImageUpload([...], 'admin-template/upload/', 400, 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

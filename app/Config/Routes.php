@@ -48,13 +48,23 @@ $routes->get('admin/edit/aboutus/(:num)', 'Admin::editaboutus/$1');
 $routes->post('admin/aboutus/update', 'Admin::update_aboutus');
 
 /* portfolio routes start */
+
 /* show portfolio data */
+
 $routes->get('/admin/portfolio', 'Admin::portfolio');
+
 /* routes for create portfolio data */
 $routes->get('/admin/create-portfolio', 'Admin::createportfolio');
 
 /* routes for insert portfolio data admin/portfolio/insert */
 $routes->post('admin/portfolio/insert', 'Admin::insert_portfolio');
+
+/* Show editable portfolio page data */
+
+$routes->get('admin/edit/portfolio/(:num)', 'Admin::editportfolio/$1');
+
+/* update portfolio page data */
+$routes->post('admin/portfolio/update', 'Admin::update_portfolio');
 /* portfolio routes end */
 
 /*
