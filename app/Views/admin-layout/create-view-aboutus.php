@@ -8,13 +8,25 @@
     <!-- form start -->
     <form method="post" enctype='multipart/form-data' action="<?php echo site_url('admin/create/insert'); ?>">
       <div class="card-body">
-        
-
         <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" class="form-control" id="title" name="title" placeholder="title">
+          <label for="title">Page Title</label>
+          <input type="text" class="form-control" id="title" name="page_title" placeholder="title">
           <?php if (isset($errors['title'])) : ?>
             <span class="text-danger"><?= $errors['title'] ?></span>
+          <?php endif ?>
+        </div>
+        <div class="form-group">
+          <label for="page_name">Page Name</label>
+          <input type="text" class="form-control" id="page_name" name="page_name" placeholder="Page Name">
+          <?php if (isset($errors['page_name'])) : ?>
+            <span class="text-danger"><?= $errors['page_name'] ?></span>
+          <?php endif ?>
+        </div>
+        <div class="form-group">
+          <label for="controller_name">Controller Name</label>
+          <input type="text" class="form-control" id="controller_name" name="controller_name" placeholder="Controller Name">
+          <?php if (isset($errors['page_name'])) : ?>
+            <span class="text-danger"><?= $errors['page_name'] ?></span>
           <?php endif ?>
         </div>
         <div class="form-group">
@@ -31,7 +43,7 @@
           </h3>
         </div>
         <div class="card-body " style="margin-left:-20px;">
-          <textarea id="summernote" name="description">
+          <textarea id="summernote"  rows="4" cols="50" name="description">
                 Place <em>some</em> <u>text</u> <strong>here</strong>
               </textarea>
           <?php if (isset($errors['description'])) : ?>

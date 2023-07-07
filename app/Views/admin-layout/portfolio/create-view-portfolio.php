@@ -52,10 +52,11 @@
         </div> -->
         <div class="form-group">
           <label for="formFileLg" class="form-label">Select image:</label>
-          <div id="imageFieldsContainer">
-            <input class="form-control form-control-lg" type="file" name="image[]">
-          </div>
           <button id="addImageBtn" class="btn btn-primary">Add More Images</button>
+          <div id="imageFieldsContainer">
+            <input class="form-control form-control-lg" type="file" name="image[]"  >
+          </div>
+          
         </div>
       </div>
       <!-- /.card-body -->
@@ -93,7 +94,7 @@
       var newImageInput = $('<input>', {
         class: 'form-control form-control-lg',
         type: 'file',
-        name: 'image[]'
+        name: `image[${imageCounter}]` 
       }).appendTo(newImageField);
 
       var removeBtn = $('<button>', {

@@ -70,7 +70,24 @@
 <!-- InputMask -->
 <script src="admin-template/plugins/inputmask/jquery.inputmask.min.js"></script>
 
+<!-- for showing images in  view-portoflio pages -->
+<script>
+  $(document).ready(function() {
+    $('.toggle-images-btn').click(function() {
+      var $images = $(this).closest('tr').find('.portfolio-image');
+      var buttonText = $(this).text();
 
+      if (buttonText === 'Show') {
+        $images.show();
+        $(this).text('Hide');
+      } else {
+        $images.hide();
+        $(this).text('Show');
+      }
+    });
+  });
+</script>
+<!-- for showing images in  view-portoflio pages -->
 <script>
   $(function () {
     // Summernote
@@ -79,7 +96,7 @@
     // CodeMirror
     CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
       mode: "htmlmixed",
-      theme: "monokai"
+      theme: "monokai",
     });
   })
 </script>

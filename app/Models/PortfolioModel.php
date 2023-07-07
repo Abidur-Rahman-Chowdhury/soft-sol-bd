@@ -1,74 +1,49 @@
 <?php
+
 namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PortfolioModel extends Model {
-
-    protected $table = 'portfolio';
-
-    protected $primaryKey = 'id';
-
-    protected $allowedFields = ['title','meta_key_word','description','file_name'];
-    
-
-public function portfolioImageUpload($files, $folderPath = '', $targetWidth = 200, $targetHeight = 200, $index)
+class PortfolioModel extends Model
 {
-    $file = $files['tmp_name'][$index];
-    $sourceProperties = getimagesize($file);
+    protected $table = 'portfolio';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['title', 'meta_key_word', 'description'];
 
-    if (empty($folderPath)) {
-        $folderPath = "admin-template/upload/";
-    }
-
-    $ext = pathinfo($files['name'][$index], PATHINFO_EXTENSION);
-    $fileNewName = 'image-' . time() . '-' . $index . '.' . $ext;
-    $imageType = $sourceProperties[2];
-
-    switch ($imageType) {
-        case IMAGETYPE_PNG:
-            $imageResourceId = imagecreatefrompng($file);
-            $targetLayer = $this->imageResize($imageResourceId, $sourceProperties[0], $sourceProperties[1], $targetWidth, $targetHeight);
-            imagepng($targetLayer, $folderPath . $fileNewName);
-            return $fileNewName;
-
-        case IMAGETYPE_GIF:
-            $imageResourceId = imagecreatefromgif($file);
-            $targetLayer = $this->imageResize($imageResourceId, $sourceProperties[0], $sourceProperties[1], $targetWidth, $targetHeight);
-            imagegif($targetLayer, $folderPath . $fileNewName);
-            return $fileNewName;
-
-        case IMAGETYPE_JPEG:
-            $imageResourceId = imagecreatefromjpeg($file);
-            $targetLayer = $this->imageResize($imageResourceId, $sourceProperties[0], $sourceProperties[1], $targetWidth, $targetHeight);
-            imagejpeg($targetLayer, $folderPath . $fileNewName);
-            return $fileNewName;
-
-        default:
-            return "Invalid Image type.";
-    }
-}
-
-    
-    // function imageResize($imageResourceId,$width,$height, $targetWidth, $targetHeight) {
-    //     $targetLayer=imagecreatetruecolor($targetWidth,$targetHeight);
-    //     imagecopyresampled($targetLayer,$imageResourceId,0,0,0,0,$targetWidth,$targetHeight, $width,$height);
-    //     return $targetLayer;
-    // }
-
-    protected function imageResize($imageResourceId, $width, $height, $targetWidth, $targetHeight)
+    public function insertPortfolio($data)
     {
-        $targetLayer = imagecreatetruecolor($targetWidth, $targetHeight);
-        imagecopyresampled($targetLayer, $imageResourceId, 0, 0, 0, 0, $targetWidth, $targetHeight, $width, $height);
-        return $targetLayer;
+        $this->insert($data);
+        return $this->insertID();
     }
 
+    public function insertImages($data)
+    {
+        $db = db_connect();
+        $builder = $db->table('images');
+        $builder->insertBatch($data);
+    }
 
+    public function getAllPortfolios()
+    {
+        $db = db_connect();
+        $builder = $db->table('portfolio');
+        $portfolios = $builder->get()->getResultArray();
 
+        foreach ($portfolios as &$portfolio) {
+            $portfolio['images'] = $this->getPortfolioImages($portfolio['id']);
+        }
 
+        return $portfolios;
+    }
 
+    public function getPortfolioImages($portfolioId)
+    {
+        $db = db_connect();
+        $builder = $db->table('images');
+        $builder->where('page_name', 'portfolio');
+        $builder->where('page_id', $portfolioId);
+        $images = $builder->get()->getResultArray();
+
+        return $images;
+    }
 }
-
-
-
-?>
