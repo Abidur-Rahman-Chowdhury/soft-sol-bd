@@ -33,11 +33,30 @@ $routes->get('/', 'Home::index');
 $routes->get('/home/test', 'Home::test');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/login', 'Admin::login');
-$routes->get('/admin/about-us', 'Admin::aboutus');
 
-$routes->get('/admin/create-about', 'Admin::createaboutus');
+/* create softsol data form  */
+$routes->get('/admin/softsol-data', 'Admin::create_softsol_data');
 /* route for post about us page data into database */
-$routes->post('admin/create/insert', 'Admin::insert_about_us');
+$routes->post('admin/insert-softsol-data', 'Admin::insert_softsol_data');
+
+/* show editable softsol data */
+$routes->get('admin/softsol-data/edit/(:num)', 'Admin::edit_softsol_data/$1');
+
+/* update editable data */
+$routes->post('admin/softsol-data/update', 'Admin::update_softsol_data');
+
+/* about us start */
+
+/* view aboutus data  */
+$routes->get('/admin/about-us/(:any)', 'Admin::aboutus/$1');
+
+
+
+/* view  services our-services data */
+$routes->get('/admin/services/(:any)', 'Admin::services_our_services/$1');
+
+
+/* about us end  */
 
 /* Show editable create page data */
 
@@ -66,6 +85,17 @@ $routes->get('admin/edit/portfolio/(:num)', 'Admin::editportfolio/$1');
 /* update portfolio page data */
 $routes->post('admin/portfolio/update', 'Admin::update_portfolio');
 /* portfolio routes end */
+
+
+
+
+
+
+
+
+/* Client Routs  */
+
+$routes->get('aboutus', 'Client::aboutus');
 
 /*
  * --------------------------------------------------------------------

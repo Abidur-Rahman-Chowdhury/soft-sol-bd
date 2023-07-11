@@ -1,0 +1,128 @@
+CRITICAL - 2023-07-10 06:27:10 --> include(C:\wamp64\www\software-company\app\Views/client-layout/couter.php): Failed to open stream: No such file or directory
+in APPPATH\Views\client\aboutus\aboutus.php on line 119.
+ 1 APPPATH\Views\client\aboutus\aboutus.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\wamp64\\www\\software-company\\app\\Views/client-layout/couter.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php', 119)
+ 2 APPPATH\Views\client\aboutus\aboutus.php(119): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('client/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Client.php(34): view('client/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Client->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 06:27:30 --> include(C:\wamp64\www\software-company\app\Views/client-layout/couter.php): Failed to open stream: No such file or directory
+in APPPATH\Views\client\aboutus\aboutus.php on line 119.
+ 1 APPPATH\Views\client\aboutus\aboutus.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\wamp64\\www\\software-company\\app\\Views/client-layout/couter.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php', 119)
+ 2 APPPATH\Views\client\aboutus\aboutus.php(119): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('client/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Client.php(34): view('client/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Client->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 06:27:31 --> include(C:\wamp64\www\software-company\app\Views/client-layout/couter.php): Failed to open stream: No such file or directory
+in APPPATH\Views\client\aboutus\aboutus.php on line 119.
+ 1 APPPATH\Views\client\aboutus\aboutus.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\wamp64\\www\\software-company\\app\\Views/client-layout/couter.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php', 119)
+ 2 APPPATH\Views\client\aboutus\aboutus.php(119): include()
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('client/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Client.php(34): view('client/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Client->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-10 07:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 07:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-10 08:33:23 --> Undefined array key 4
+in APPPATH\Views\client-layout\aboutus\view-company.php on line 76.
+ 1 APPPATH\Views\client-layout\aboutus\view-company.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\wamp64\\www\\software-company\\app\\Views\\client-layout\\aboutus\\view-company.php', 76)
+ 2 APPPATH\Views\client\aboutus\aboutus.php(12): include('C:\\wamp64\\www\\software-company\\app\\Views\\client-layout\\aboutus\\view-company.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('client/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Client.php(24): view('client/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Client->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:33:50 --> Undefined array key 4
+in APPPATH\Views\client-layout\aboutus\view-company.php on line 76.
+ 1 APPPATH\Views\client-layout\aboutus\view-company.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\wamp64\\www\\software-company\\app\\Views\\client-layout\\aboutus\\view-company.php', 76)
+ 2 APPPATH\Views\client\aboutus\aboutus.php(12): include('C:\\wamp64\\www\\software-company\\app\\Views\\client-layout\\aboutus\\view-company.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\client\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('client/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Client.php(24): view('client/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Client->aboutus()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 13:44:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(275): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editaboutus('30')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-10 13:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-10 13:53:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(275): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editaboutus('30')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 16:08:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(275): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editaboutus('30')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 16:08:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin-layout\edit-view-aboutus.php on line 10.
+ 1 APPPATH\Views\admin-layout\edit-view-aboutus.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php', 10)
+ 2 APPPATH\Views\admin\edit-about-us.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\edit-view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\edit-about-us.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-about-us', [], true)
+ 6 APPPATH\Controllers\Admin.php(275): view('admin/edit-about-us', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->editaboutus('30')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-10 16:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 16:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 17:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 17:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 17:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 17:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-10 17:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

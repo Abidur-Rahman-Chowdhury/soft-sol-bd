@@ -1,0 +1,398 @@
+ERROR - 2023-07-07 05:18:44 --> mysqli_sql_exception: Unknown column 'meta_key_word' in 'field list' in C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\software-company\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\software-company\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\software-company\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\software-company\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\software-company\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\software-company\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\software-company\app\Models\SoftsolModel.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\software-company\app\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData(Array)
+#9 C:\wamp64\www\software-company\system\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+#10 C:\wamp64\www\software-company\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\wamp64\www\software-company\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\software-company\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-07 05:18:44 --> Unknown column 'meta_key_word' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (:page_title:, :page_name:, :controller_name:, :meta_key_word:, :description:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\SoftsolModel.php(15): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-07 05:19:14 --> mysqli_sql_exception: Unknown column 'meta_key_word' in 'field list' in C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\software-company\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\software-company\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\software-company\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\software-company\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\software-company\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\software-company\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\software-company\app\Models\SoftsolModel.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\software-company\app\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData(Array)
+#9 C:\wamp64\www\software-company\system\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+#10 C:\wamp64\www\software-company\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\wamp64\www\software-company\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\software-company\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-07 05:19:14 --> Unknown column 'meta_key_word' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (\'About Us\', \'About us\', \'about-us\', \'about us\', \'this is about us information&nbsp;\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `softsol_data` (`page_title`, `page_name`, `controller_name`, `meta_key_word`, `description`) VALUES (:page_title:, :page_name:, :controller_name:, :meta_key_word:, :description:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\SoftsolModel.php(15): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-07 05:24:40 --> mysqli_sql_exception: Unknown column 'meta_key_word' in 'field list' in C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\software-company\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\software-company\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\software-company\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\software-company\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\software-company\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\software-company\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\software-company\app\Models\SoftsolModel.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\software-company\app\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData(Array)
+#9 C:\wamp64\www\software-company\system\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+#10 C:\wamp64\www\software-company\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\wamp64\www\software-company\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\software-company\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-07 05:24:40 --> Unknown column 'meta_key_word' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (:page_name:, :controller_name:, :page_title:, :meta_key_word:, :description:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\SoftsolModel.php(15): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-07 05:26:19 --> mysqli_sql_exception: Unknown column 'meta_key_word' in 'field list' in C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\software-company\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\software-company\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\software-company\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\software-company\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\software-company\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\software-company\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\software-company\app\Models\SoftsolModel.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\software-company\app\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData(Array)
+#9 C:\wamp64\www\software-company\system\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+#10 C:\wamp64\www\software-company\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\wamp64\www\software-company\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\software-company\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-07 05:26:19 --> Unknown column 'meta_key_word' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (\'About us\', \'about-us\', \'About Us\', \'about us\', \'                Place <em>some</em> <u>text</u> <strong>here</strong>\\r\\n              \')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `softsol_data` (`page_name`, `controller_name`, `page_title`, `meta_key_word`, `description`) VALUES (:page_name:, :controller_name:, :page_title:, :meta_key_word:, :description:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\SoftsolModel.php(15): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Admin.php(108): App\Models\SoftsolModel->insertSoftsolData([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:26:58 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:27:23 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:29:20 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:29:27 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:30:09 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:30:31 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:50:27 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(132): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 05:51:13 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(133): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 06:02:21 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Models\SoftsolModel.php(23): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 APPPATH\Controllers\Admin.php(133): App\Models\SoftsolModel->insertImages([])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->insert_softsol_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:59:07 --> Too few arguments to function App\Controllers\Admin::aboutus(), 0 passed in C:\wamp64\www\software-company\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:00:43 --> Too few arguments to function App\Controllers\Admin::aboutus(), 0 passed in C:\wamp64\www\software-company\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:00:43 --> Too few arguments to function App\Controllers\Admin::aboutus(), 0 passed in C:\wamp64\www\software-company\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:02:16 --> Too few arguments to function App\Controllers\Admin::aboutus(), 0 passed in C:\wamp64\www\software-company\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:04:26 --> Too few arguments to function App\Controllers\Admin::aboutus(), 0 passed in C:\wamp64\www\software-company\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:52:58 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(35): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:52:59 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(35): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:54:57 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\admin/AdminAboutus::aboutus/$1"
+in SYSTEMPATH\Router\Router.php on line 474.
+ 1 SYSTEMPATH\Router\Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\admin/AdminAboutus::aboutus/$1')
+ 2 SYSTEMPATH\Router\Router.php(182): CodeIgniter\Router\Router->checkRoutes('admin/about-us/about-us')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('admin/about-us/about-us')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:55:13 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(47): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:55:14 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(47): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:55:43 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(47): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:56:36 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(47): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 15:56:36 --> Class "CodeIgniter\Session\Handlers\NativeFileHandler" not found
+in SYSTEMPATH\Config\Services.php on line 667.
+ 1 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 2 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 3 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH\Common.php(984): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 6 APPPATH\Views\admin-layout\create-view-aboutus.php(1): session()
+ 7 APPPATH\Views\admin\create-about-us.php(13): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\create-view-aboutus.php')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\create-about-us.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/create-about-us', [], true)
+11 APPPATH\Controllers\Admin.php(47): view('admin/create-about-us')
+12 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->create_softsol_data()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-07 15:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-07 15:58:10 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\admin/AdminAboutus::aboutus/$1"
+in SYSTEMPATH\Router\Router.php on line 474.
+ 1 SYSTEMPATH\Router\Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\admin/AdminAboutus::aboutus/$1')
+ 2 SYSTEMPATH\Router\Router.php(182): CodeIgniter\Router\Router->checkRoutes('admin/about-us/about-us')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('admin/about-us/about-us')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-07 15:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 15:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 16:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 18:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-07 18:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

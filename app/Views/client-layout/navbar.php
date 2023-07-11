@@ -33,7 +33,7 @@
                        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
                        		<div class="dropdown-menu">
 								<ul>
-		                            <li><a href="about.html">About Us</a></li>
+		                            <li><a href="<?php echo base_url()?>aboutus">About Us</a></li>
 		                            <li><a href="service.html">Services</a></li>
 		                            <li><a href="career.html">Career</a></li>
 		                            <li><a href="testimonial.html">Testimonials</a></li>

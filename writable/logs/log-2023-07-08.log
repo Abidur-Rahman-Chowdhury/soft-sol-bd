@@ -1,0 +1,60 @@
+INFO - 2023-07-08 04:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 04:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 04:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 04:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 05:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-08 05:56:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(828): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(38): CodeIgniter\Model->__call('getImagesByPageName', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('about-us')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 06:02:09 --> Undefined variable $aboutus
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 2.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aboutus', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 2)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(42): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('about-us')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 06:03:40 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(42): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('about-us')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-08 06:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 06:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 06:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 06:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 06:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 06:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 07:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 07:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 07:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 07:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 07:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 08:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 08:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-08 09:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

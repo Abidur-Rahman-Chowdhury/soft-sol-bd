@@ -38,7 +38,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/admin/about-us" class="nav-link">
+                <a href="/admin/about-us/about-us" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>About Us</p>
                 </a>
@@ -50,15 +50,33 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
+                <a href="/admin/about-us/who-are-we" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
+                  <p>Who Are We</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
+                <a href="/admin/about-us/our-company" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
+                  <p>Our Company</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/about-us/what-we-do" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>What We Do</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/about-us/dedicated-support" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dedicated Support</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/services/our-services" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Our Services</p>
                 </a>
               </li>
               <li class="nav-item">
