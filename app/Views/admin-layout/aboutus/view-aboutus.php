@@ -22,6 +22,7 @@
                     <th>Created At</th>
                     <th>Updated At</th>
                     <th>Images</th>
+                    <th>Act/Dea</th>
                     <th>Edit</th>
                   </tr>
                 </thead>
@@ -37,16 +38,22 @@
                       <td><?= date('Y-m-d', strtotime($about['created_at'])); ?></td>
                       <td><?= date('Y-m-d', strtotime($about['updated_at'])); ?></td>
                       <td>
-                        <?php if ($about['images']) : ?>
-                          <button class="btn btn-sm btn-info toggle-images-btn">Show</button>
+                        <?php if (isset($about['images']) && !empty($about['images'])) : ?>
+                       <button class="btn btn-sm btn-info toggle-images-btn">Show</button>
                           <?php foreach ($about['images'] as $image) : ?>
                             <div class="thumbnail">
-                              <img src="<?php echo base_url('admin-template/upload/' . $image['file_name']); ?>" alt="Image" class="portfolio-image" style="display: none;">
+                              <?php
+                              $imageSrc = ($about['page_name'] === 'slide')
+                                ? base_url('admin-template/slide/' . $image['file_name'])
+                                : base_url('admin-template/upload/' . $image['file_name']);
+                              ?>
+                              <img src="<?= $imageSrc ?>" alt="Image" class="portfolio-image" style="display:none; width: 200px; height:200px">
                             </div>
                           <?php endforeach; ?>
-
                         <?php endif; ?>
-                      </td>
+                     
+                      <?php $actDec = $about['is_active'] == 0 ? 1 : 0 ; ?>
+                      <td>  <a href="<?= base_url('admin/softsol-data/act-dec/' . $about['id'].'/'. $actDec ); ?>">Act/Dec</a></td>
                       <td><a href="<?= base_url('admin/softsol-data/edit/' . $about['id']); ?>">Edit</a></td>
                     </tr>
                   <?php } ?>

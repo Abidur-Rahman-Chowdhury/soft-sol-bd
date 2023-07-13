@@ -13,3 +13,197 @@ INFO - 2023-07-11 09:14:20 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-11 09:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 09:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 09:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 09:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 09:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 09:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 09:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 10:38:59 --> Undefined variable $page_name
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 45.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 45)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(55): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 10:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-11 11:44:23 --> mysqli_sql_exception: Unknown column 'slide' in 'field list' in C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\software-company\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `slide`\n...', 0)
+#1 C:\wamp64\www\software-company\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `slide`\n...')
+#2 C:\wamp64\www\software-company\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `slide`\n...')
+#3 C:\wamp64\www\software-company\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `slide`\n...', Array, false)
+#4 C:\wamp64\www\software-company\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\software-company\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\software-company\system\Model.php(219): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\software-company\system\BaseModel.php(588): CodeIgniter\Model->doFindColumn('slide')
+#8 C:\wamp64\www\software-company\app\Controllers\Admin.php(41): CodeIgniter\BaseModel->findColumn('slide')
+#9 C:\wamp64\www\software-company\system\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+#10 C:\wamp64\www\software-company\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\wamp64\www\software-company\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\software-company\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-07-11 11:44:23 --> Unknown column 'slide' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `slide`
+FROM `softsol_data`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `slide`
+FROM `softsol_data`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `slide`
+FROM `softsol_data`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `slide`
+FROM `softsol_data`', [], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 SYSTEMPATH\Model.php(219): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\BaseModel.php(588): CodeIgniter\Model->doFindColumn('slide')
+ 9 APPPATH\Controllers\Admin.php(41): CodeIgniter\BaseModel->findColumn('slide')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:51:25 --> Call to undefined method App\Models\SoftsolModel::dynamicCheckExist
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Admin.php(41): CodeIgniter\Model->__call('dynamicCheckExist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:51:36 --> Call to undefined method App\Models\SoftsolModel::dynamicCheckExist
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Admin.php(41): CodeIgniter\Model->__call('dynamicCheckExist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 11:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 11:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 11:55:12 --> Undefined variable $aboutus
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 APPPATH\Controllers\Admin.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aboutus', 'C:\\wamp64\\www\\software-company\\app\\Controllers\\Admin.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('what-we-do')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 11:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 11:55:54 --> Call to undefined method App\Models\SoftsolModel::dynamicCheckExist
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Admin.php(41): CodeIgniter\Model->__call('dynamicCheckExist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:57:02 --> Call to undefined method App\Models\SoftsolModel::dynamicCheckExist
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Admin.php(41): CodeIgniter\Model->__call('dynamicCheckExist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 12:08:32 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 12:47:13 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 15:16:04 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 15:21:32 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('about-us')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 15:21:36 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 15:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 15:23:35 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('slide')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 15:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 15:23:39 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('who-are-we')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 15:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 15:23:59 --> Undefined array key "images"
+in APPPATH\Views\admin-layout\aboutus\view-aboutus.php on line 40.
+ 1 APPPATH\Views\admin-layout\aboutus\view-aboutus.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "images"', 'C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php', 40)
+ 2 APPPATH\Views\admin\aboutus\aboutus.php(7): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin-layout\\aboutus\\view-aboutus.php')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\software-company\\app\\Views\\admin\\aboutus\\aboutus.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/aboutus/aboutus', [], true)
+ 6 APPPATH\Controllers\Admin.php(58): view('admin/aboutus/aboutus', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->aboutus('our-company')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 15:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 15:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

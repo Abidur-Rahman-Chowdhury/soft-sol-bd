@@ -52,6 +52,8 @@
                     <?php endif ?>
                 </div>
 
+             
+
                 <div class="form-group">
                     <label for="formFileLg" class="form-label">Select image:</label>
                     <button id="addImageBtn" class="btn btn-primary">Add More Images</button>

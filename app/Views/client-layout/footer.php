@@ -5,37 +5,37 @@
 				<div class="col-md-4 col-sm-12 footer-widget">
 					<h3 class="widget-title">Recent Posts</h3>
 					<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Bulgaria claims to find Europe's 'oldest town'</a></h4>
-								<p class="post-meta">
-									<span class="author">Posted by John Doe</span>
-									<span class="post-meta-cat">in<a href="#"> Blog</a></span>
-								</p>
-							</div>
-						</div><!-- 1st Latest Post end -->
+						<div class="latest-post-content media-body">
+							<h4><a href="#">Bulgaria claims to find Europe's 'oldest town'</a></h4>
+							<p class="post-meta">
+								<span class="author">Posted by John Doe</span>
+								<span class="post-meta-cat">in<a href="#"> Blog</a></span>
+							</p>
+						</div>
+					</div><!-- 1st Latest Post end -->
 
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Few Answers in Case of Murdered Law Professor</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Mar 15, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">03</a></span>
-								</p>
-							</div>
-						</div><!-- 2nd Latest Post end -->
+					<div class="latest-post-items media">
+						<div class="latest-post-content media-body">
+							<h4><a href="#">Few Answers in Case of Murdered Law Professor</a></h4>
+							<p class="post-meta">
+								<span class="date"><i class="icon icon-calendar"></i> Mar 15, 2015</span>
+								<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">03</a></span>
+							</p>
+						</div>
+					</div><!-- 2nd Latest Post end -->
 
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Over the year we have lots of experience in our field</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Apr 17, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">14</a></span>
-								</p>
-							</div>
-						</div><!-- 3rd Latest Post end -->
-	
+					<div class="latest-post-items media">
+						<div class="latest-post-content media-body">
+							<h4><a href="#">Over the year we have lots of experience in our field</a></h4>
+							<p class="post-meta">
+								<span class="date"><i class="icon icon-calendar"></i> Apr 17, 2015</span>
+								<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">14</a></span>
+							</p>
+						</div>
+					</div><!-- 3rd Latest Post end -->
+
 				</div><!--/ End Recent Posts-->
-				
+
 
 				<div class="col-md-4 col-sm-12 footer-widget">
 					<h3 class="widget-title">Flickr Photos</h3>
@@ -88,20 +88,20 @@
 							<p>+(785) 238-4131</p>
 						</div>
 					</div>
-                    <form action="#" role="form">
-                        <div class="input-group subscribe">
-                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                            <span class="input-group-addon">
-                              <button class="btn" type="submit"><i class="fa fa-envelope-o"> </i></button>
-                            </span>                        
-                        </div>
-                    </form>
+					<form action="#" role="form">
+						<div class="input-group subscribe">
+							<input type="email" class="form-control" placeholder="Email Address" required="">
+							<span class="input-group-addon">
+								<button class="btn" type="submit"><i class="fa fa-envelope-o"> </i></button>
+							</span>
+						</div>
+					</form>
 				</div><!--/ end about us -->
 
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</footer><!-- Footer end -->
-	
+
 
 	<!-- Copyright start -->
 	<section id="copyright" class="copyright angle">
@@ -138,11 +138,11 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="copyright-info">
-         			 &copy; Copyright 2019 Themefisher. <span>Designed by <a href="https://themefisher.com">Themefisher.com</a></span>
-        			</div>
+						&copy; Copyright 2019 Themefisher. <span>Designed by <a href="https://themefisher.com">Themefisher.com</a></span>
+					</div>
 				</div>
 			</div><!--/ Row end -->
-		   <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+			<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
 				<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
 			</div>
 		</div><!--/ Container end -->
@@ -150,6 +150,8 @@
 
 	<!-- Javascript Files
 	================================================== -->
+
+
 
 	<!-- initialize jQuery Library -->
 	<script type="text/javascript" src="client/js/jquery.js"></script>
@@ -180,6 +182,11 @@
 	<script type="text/javascript" src="client/js/waypoints.min.js"></script>
 	<!-- Template custom -->
 	<script type="text/javascript" src="client/js/custom.js"></script>
+
+	
+	
 	</div><!-- Body inner end -->
-</body>
-</html>
+
+	</body>
+
+	</html>

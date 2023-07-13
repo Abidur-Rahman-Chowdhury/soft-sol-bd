@@ -22,7 +22,7 @@
                        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
                        		<div class="dropdown-menu">
 								<ul>
-		                            <li class="active"><a href="index.html">Home 1</a></li>
+		                            <li class="active"><a href="/">Home 1</a></li>
 		                            <li><a href="index-2.html">Home 2</a></li>
 		                            <li><a href="index-3.html">Home 3</a></li>
 		                            <li><a href="index-4.html">Home 4</a></li>

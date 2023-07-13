@@ -30,6 +30,13 @@ class DynamicModel extends Model
         return $query->update($data, $where);
     }
 
+    public function getSlideImages(){
+        $query = $this->db->query("select images.file_name  from softsol_data 
+        inner join images on softsol_data.id = images.page_id 
+        where  softsol_data.page_title = 'home-slide' and images.is_active = 1");
+        return $query->getResultArray();
+    }
+
 
     // public function imageUpload($FILES, $folderPath = '', $targetWidth=200, $targetHeight=200){
     //     $file = $FILES['image']['tmp_name']; 

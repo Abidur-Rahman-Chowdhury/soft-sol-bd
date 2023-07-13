@@ -37,15 +37,27 @@ class Admin extends BaseController
     {
         $model = new SoftsolModel();
         $dynamic_model = new DynamicModel();
-        
-        $aboutus = $dynamic_model->dynamicCheckExist(['controller_name' => $page_name], 'softsol_data');
-        foreach ($aboutus as &$about) {
-            $about['images'] = $dynamic_model->dynamicCheckExist(['page_id' => $about['id']], 'images');
+        if($page_name === 'slide') {
+            $aboutus = $dynamic_model->dynamicCheckExist(['page_name' => $page_name], 'softsol_data');
+           
+            foreach ($aboutus as &$about) {
+                $about['images'] = $dynamic_model->dynamicCheckExist(['page_id' => $about['id']], 'images');
+            }
+           
+        } 
+        elseif($page_name !== 'slide') {
+            $aboutus = $dynamic_model->dynamicCheckExist(['controller_name' => $page_name], 'softsol_data');
+            foreach ($aboutus as &$about) {
+                $about['images'] = $dynamic_model->dynamicCheckExist(['page_id' => $about['id']], 'images');
+            }
         }
+
         $data['aboutus'] = $aboutus; 
-        
+        // dd($data);
+
         return view('admin/aboutus/aboutus', $data);
     }
+
 
 
     /* services our-services  data show in table  */
@@ -53,14 +65,14 @@ class Admin extends BaseController
     {
         $model = new SoftsolModel();
         $dynamic_model = new DynamicModel();
-        
+
         $aboutus = $dynamic_model->dynamicCheckExist(['controller_name' => $page_name], 'softsol_data');
         foreach ($aboutus as &$about) {
             $about['images'] = $dynamic_model->dynamicCheckExist(['page_name' => $about['page_name']], 'images');
         }
-       
-        $data['aboutus'] = $aboutus; 
-        
+
+        $data['aboutus'] = $aboutus;
+
         return view('admin/services/our-services', $data);
     }
 
@@ -85,8 +97,9 @@ class Admin extends BaseController
             'page_title' => 'required',
             'meta_key_word' => 'required',
             'description' => 'required',
+            
         ]);
-
+       
         $page_name = $this->request->getVar('page_name');
         $controller_name = $this->request->getVar('controller_name');
 
@@ -109,71 +122,74 @@ class Admin extends BaseController
                     'page_title' => $this->request->getVar('page_title'),
                     'meta_key_word' => $this->request->getVar('meta_key_word'),
                     'description' => $this->request->getVar('description'),
+                    
                 ];
 
                 $pageId = $model->insertSoftsolData($data);
 
                 if ($pageId) {
-                    if($page_name === 'slide') {
-                        $this->imageWidth = 465;
-                        $this->imageHeight = 449;
+                    if ($page_name === 'slide') {
+                        $this->imageWidth = 1600;
+                        $this->imageHeight = 800;
                         if ($files = $this->request->getFiles()) {
                             $uploadedImages = [];
-    
+
                             if (isset($files['image'])) {
                                 foreach ($files['image'] as $image) {
                                     if ($image->isValid() && !$image->hasMoved()) {
                                         $newName = $image->getRandomName();
-    
+
                                         // Resize the image before uploading
                                         $resizedImage = $this->resizeImage($image->getTempName(), $this->imageWidth, $this->imageHeight);
-    
+
                                         $image->move(ROOTPATH . 'public/admin-template/slide/', $newName);
-    
+
                                         $uploadedImages[] = [
                                             'page_name' => $page_name,
                                             'page_id' => $pageId,
                                             'file_name' => $newName,
                                             'image_title' => $image->getClientName(),
+                                            
                                         ];
                                     }
                                 }
                             }
-    
+
                             if (!empty($uploadedImages)) {
                                 $model->insertImages($uploadedImages);
                             }
                         }
-                    } else {
+                    } elseif ($page_name !== 'slide') {
                         if ($files = $this->request->getFiles()) {
                             $uploadedImages = [];
-    
+
                             if (isset($files['image'])) {
                                 foreach ($files['image'] as $image) {
                                     if ($image->isValid() && !$image->hasMoved()) {
                                         $newName = $image->getRandomName();
-    
+
                                         // Resize the image before uploading
                                         $resizedImage = $this->resizeImage($image->getTempName(), $this->imageWidth, $this->imageHeight);
-    
+
                                         $image->move(ROOTPATH . 'public/admin-template/upload/', $newName);
-    
+
                                         $uploadedImages[] = [
                                             'page_name' => $page_name,
                                             'page_id' => $pageId,
                                             'file_name' => $newName,
                                             'image_title' => $image->getClientName(),
+                                            
                                         ];
                                     }
                                 }
                             }
-    
+
                             if (!empty($uploadedImages)) {
                                 $model->insertImages($uploadedImages);
                             }
                         }
                     }
-                    
+
 
                     session()->setFlashdata('success', 'Data inserted successfully.');
                     return redirect()->to(base_url('admin/softsol-data'));
@@ -188,7 +204,7 @@ class Admin extends BaseController
     public function update_softsol_data()
     {
         $validation = \Config\Services::validation();
-
+        $is_active = $this->request->getVar('is_active');
         $validation->setRules([
             'page_name' => 'required',
             'controller_name' => 'required',
@@ -196,7 +212,7 @@ class Admin extends BaseController
             'meta_key_word' => 'required',
             'description' => 'required',
         ]);
-
+       
         $pageId = $this->request->getVar('id');
 
         if (!$validation->withRequest($this->request)->run()) {
@@ -210,6 +226,8 @@ class Admin extends BaseController
                 'page_title' => $this->request->getVar('page_title'),
                 'meta_key_word' => $this->request->getVar('meta_key_word'),
                 'description' => $this->request->getVar('description'),
+                
+                
             ];
             return view('admin/edit-softsol-data', $data);
         } else {
@@ -221,6 +239,7 @@ class Admin extends BaseController
                 'page_title' => $this->request->getVar('page_title'),
                 'meta_key_word' => $this->request->getVar('meta_key_word'),
                 'description' => $this->request->getVar('description'),
+               
             ];
 
             $model->updateSoftsolData($pageId, $data);
@@ -243,6 +262,7 @@ class Admin extends BaseController
                                 'page_id' => $pageId,
                                 'file_name' => $newName,
                                 'image_title' => $image->getClientName(),
+                               
                             ];
                         }
                     }
@@ -258,15 +278,25 @@ class Admin extends BaseController
         }
     }
 
-/* show editable data  */
+    /* show editable data  */
     public function edit_softsol_data($id = null)
     {
         $model = new SoftsolModel();
         $data['data'] = $model->where('id', $id)->first();
-    
+
         return view('admin/edit-softsol-data', $data);
     }
+    public function act_dec_softsol_data($id = null, $actDec = null)
+    {
+        // dd($id);
     
+        $dynamic_model = new DynamicModel();
+        $dynamic_model->dynamicUpdate(['id'=>$id],'softsol_data',['is_active' => $actDec]); 
+        $dynamic_model->dynamicUpdate(['page_id'=>$id],'images',['is_active' => $actDec]); 
+        
+        return redirect()->to('admin/about-us/slide');
+    }
+
 
 
     /* update about us data */

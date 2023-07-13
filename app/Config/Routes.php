@@ -11,7 +11,7 @@ $routes = Services::routes();
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Client');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -29,7 +29,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Client::index');
 $routes->get('/home/test', 'Home::test');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/login', 'Admin::login');
@@ -41,6 +41,8 @@ $routes->post('admin/insert-softsol-data', 'Admin::insert_softsol_data');
 
 /* show editable softsol data */
 $routes->get('admin/softsol-data/edit/(:num)', 'Admin::edit_softsol_data/$1');
+$routes->get('admin/softsol-data/act-dec/(:num)/(:num)', 'Admin::act_dec_softsol_data/$1/$2');
+
 
 /* update editable data */
 $routes->post('admin/softsol-data/update', 'Admin::update_softsol_data');
@@ -95,6 +97,9 @@ $routes->post('admin/portfolio/update', 'Admin::update_portfolio');
 
 /* Client Routs  */
 
+/*  */
+
+/* aboutus routes  */
 $routes->get('aboutus', 'Client::aboutus');
 
 /*
